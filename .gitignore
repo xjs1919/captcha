@@ -1,0 +1,5 @@
+/target
+/*.iml
+/captcha-service/*.iml
+/captcha-sdk/*.iml
+/.idea
