@@ -29,7 +29,7 @@ public class ClickCaptchaTest {
     public void testClick()throws Exception{
         InputStream srcStream = ClickCaptchaTest.class.getClassLoader().getResourceAsStream("0.jpg");
         byte[] srcBytes = IOUtil.readInputStream(srcStream);
-        ClickCaptchaImage image = ClickCaptchaImageUtil.createClickCaptchaImage(srcBytes,5);
+        ClickCaptchaImage image = ClickCaptchaImageUtil.createClickCaptchaImage(srcBytes,5, 4);
         IOUtil.saveBytes(image.getBgImgBytes(), new FileOutputStream("C:\\Users\\admin\\Desktop\\out.jpg"));
     }
 }
